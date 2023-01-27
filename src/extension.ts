@@ -6,9 +6,13 @@ import { TreeViewProvider } from './classes/treeViewProvider';
 import { createWebView } from './classes/webView';
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log('插件启动啦！！！');
+	// console.log('插件启动啦！！！');
 	TreeViewProvider.initTreeViewItem();
+	
+	// vscode.workspace.getConfiguration().update('navigation.urlArray');
+	// console.log(website);
 	const treeItems = vscode.commands.registerCommand('itemClick', (label)=>{
+		// console.log(label);
 		// vscode.window.showInformationMessage(label);
 		const webView = createWebView(context, vscode.ViewColumn.Active, label);
 		context.subscriptions.push(webView);
@@ -19,6 +23,6 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-	console.log('插件关闭啦！！！');
+	// console.log('插件关闭啦！！！');
 }
 

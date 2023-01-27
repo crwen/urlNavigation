@@ -1,12 +1,12 @@
 {
 	"name": "url-navigation",
 	"displayName": "常用网站RSS",
-	"description": "摸鱼、刷题、读小说在这里都能满足你",
-	"publisher": "VitoZhang",
+	"description": "fish",
+	"publisher": "crwen",
 	"icon": "src/assets/imgs/RSS.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zw990316/urlNavigation.git"
+		"url": "https://github.com/crwen/urlNavigation.git"
 	},
 	"keywords": [
 		"RSS",
@@ -20,12 +20,7 @@
 		"leetcode",
 		"牛客网",
 		"面试",
-		"前端",
-		"FE",
-		"摄影",
-		"照片",
-		"学习",
-		"菜鸟教程"
+		"学习"
 	],
 	"version": "0.0.14",
 	"engines": {
@@ -71,6 +66,22 @@
 					"name": "其他"
 				}
 			]
+		},
+		"configuration": {
+			"properties": {
+				"navigation.urlArray": {
+					"type": "array",
+					"default": [
+						{
+							"type": "interview",
+							"name": "leetcode",
+							"label": "leetcode",
+							"site": "https://leetcode-cn.com/",
+							"icon": "leetcode.ico"
+						}
+					]
+				}
+			}
 		}
 	},
 	"scripts": {

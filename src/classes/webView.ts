@@ -20,6 +20,7 @@ export function createWebView(
     viewColumn: ViewColumn,
     label: string,
 ){
+    // console.log(website);5
     if(webviewPanel === undefined){
         webviewPanel = window.createWebviewPanel(
             'webView',

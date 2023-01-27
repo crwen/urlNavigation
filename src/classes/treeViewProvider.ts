@@ -48,6 +48,7 @@ export class TreeViewProvider implements TreeDataProvider <TreeItemNode> {
         // if(element){  
         //     return;
         // }else{
+            // console.log(website);
             let childs:any = [];
             website.map(item =>{
                 if(item.type === this.type){
